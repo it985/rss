@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="icon" type="image/ico" href="https://jsd.onmicrosoft.cn/gh/rcy1314/tuchuang@main/NV/Level_Up_Your_Faith!_-_Geeks_Under_Grace.1yc7qyib5tsw.png">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+	<link rel="stylesheet" href="ind.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="APlayer.min.css">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>NOISE | 聚合信息阅读</title>
+		<style>
+		@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
+		body {
+			font-family: "Nanum Myeongjo", serif;
+			line-height: 1.7;
+			max-width: 800px;
+			margin:  auto ;
+			padding: auto;
+			height: 100%;
+		}
+
+		li {
+			padding-bottom: 16px;
+		}
+	</style>
+	</head>
+	<script type='text/javascript' src='js/jquery-3.2.1.js'></script>  
+        <script type='text/javascript'>  
+            //显隐按钮  
+            function showReposBtn(){  
+                var clientHeight = $(window).height();  
+                var scrollTop = $(document).scrollTop();  
+                var maxScroll = $(document).height() - clientHeight;  
+                //滚动距离超过可视一屏的距离时显示返回顶部按钮  
+                if( scrollTop > clientHeight ){  
+                    $('#retopbtn').show();  
+                }else{  
+                    $('#retopbtn').hide();  
+                }  
+                //滚动距离到达最底部时隐藏返回底部按钮  
+                if( scrollTop >= maxScroll ){  
+                    $('#rebtmbtn').hide();  
+                }else{  
+                    $('#rebtmbtn').show();  
+                }  
+            }  
+              
+            window.onload = function(){  
+                //获取文档对象  
+                $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $("html") : $("body")) : $("html,body");  
+                //显示按钮  
+                showReposBtn();  
+            }  
+              
+            window.onscroll = function(){  
+                //滚动时调整按钮显隐  
+                showReposBtn();  
+            }  
+              
+            //返回顶部  
+            function returnTop(){  
+                $body.animate({scrollTop: 0},400);  
+            }  
+              
+            //返回底部  
+            function returnBottom(){  
+                $body.animate({scrollTop: $(document).height()},400);  
+            }  
+        </script>  
+        <style type='text/css'>  
+            #retopbtn{  
+                position:fixed;  
+                bottom:10px;  
+                right:10px;  
+            }  
+            #rebtmbtn{  
+                position:fixed;  
+                top:10px;  
+                right:10px;  
+            }  
+        </style>  
+    </head>  
+    <body>  
+        <button id='rebtmbtn' onclick='returnBottom()'>⬇</button>  
+		<button id='retopbtn' onclick='returnTop()'>⬆</button> 
+	<body>
+
+
+	    
+	<div class="row my-card justify-content-center">
+           
+	<div class="col-lg-0 card">
+
+	<!-- 上下翻转文字 -->
+      
+	<style type="text/css">#container-box-1{color:#526372;text-transform:uppercase;width:100%;font-size:16px;line-height:50px;text-align:center}#flip-box-1{overflow:hidden;height:50px}#flip-box-1 div{height:50px}#flip-box-1>div>div{color:#fff;display:inline-block;text-align:center;height:50px;width:100%}#flip-box-1 div:first-child{animation:show 20s linear infinite}.flip-box-1-1{background-color:#FF7E40}.flip-box-1-2{background-color:#C166FF}.flip-box-1-3{background-color:#737373}.flip-box-1-4{background-color:#4ec7f3}.flip-box-1-5{background-color:#42c58a}.flip-box-1-6{background-color:#F1617D}@keyframes show{0%{margin-top:-300px}5%{margin-top:-250px}16.666%{margin-top:-250px}21.666%{margin-top:-200px}33.332%{margin-top:-200px}38.332%{margin-top:-150px}49.998%{margin-top:-150px}54.998%{margin-top:-100px}66.664%{margin-top:-100px}71.664%{margin-top:-50px}83.33%{margin-top:-50px}88.33%{margin-top:0px}99.996%{margin-top:0px}100%{margin-top:300px}}</style>
+	<div class="card card-site-info ">
+	<div id="container-box-1">
+	<div id="flip-box-1">
+	<div><div class="flip-box-1-1"><i class="fa fa-gitlab" aria-hidden="true"></i>  rss feed for you </div></div>
+	<div><div class="flip-box-1-2"><i class="fa fa-heart" aria-hidden="true"></i>  我们很年轻，但我们有信念、有梦想</div></div>
+	<div><div class="flip-box-1-3"><i class="fa fa-gratipay" aria-hidden="true"></i>支持你的总会支持你，不支持的做再多也徒劳</div></div>
+	<div><div class="flip-box-1-4"><i class="fa fa-drupal" aria-hidden="true"></i>  做这个世界的逆行者，先人一步看未来</div></div>
+	<div><div class="flip-box-1-5"><i class="fa fa-gitlab" aria-hidden="true"></i>  只要你用心留意，世界将无比精彩</div></div>
+	<div><div class="flip-box-1-6"><i class="fa fa-moon-o" aria-hidden="true"></i>  以下是信息聚合，精选各大站内容</div></div>
+	<div><div class="flip-box-1-1">感谢原创者，感谢分享者，感谢值得尊重的每一位</div></div>
+	</div>
+	</div>
+	</div>
+
+			   <center>信息聚合阅读-RSS feed</center>
+		
+		<!-- 滚动代码-->
+
+		<div class="card card-site-info ">
+		<div class="m-3">
+		<marquee scrollamount="5" behavior="right">
+   
+		<div id="blink">
+   
+		<a href="https://morss.it/:proxy:items=%7C%7C*[class=card]%7C%7Col%7Cli/https://rcy1314.github.io/news/" target="_blank">📢：rss feed for you 🔛</a>Rss聚合阅读页 🎁</div> 
+   
+   
+		<script language="javascript"> 
+   
+   function changeColor(){ 
+   
+   var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray"; 
+   
+   color=color.split("|"); 
+   
+   document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)]; 
+   
+   } 
+   
+   setInterval("changeColor()",200); 
+   
+		</script>
+   
+		</marquee>
+		</div>
+		</div>
+   
+   
+		<!-- 向右流动代码-->
+   
+		<marquee scrollamount="3" direction="right" behavior="alternate">
+   
+		<a>😄😃😀</a>
+   
+		</marquee>
+   
+   
+		
+   
+   
+		<div class="alert alert-danger alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert"
+			   aria-hidden="true">
+		   &times;
+		</button>
+		 页面自动2小时监测更新一次！
+		</div>
+   
+	<!-- 音乐 -->
+	</script> 		  
+	<div id="aplayer" class="aplayer" data-order="random" data-id="128460001" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-volume="0.8"></div>
+	<!-- aplayer -->
+	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+	<!-- end_aplayer -->
+	<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+	<script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/layer/layer.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/js/v3.js"></script>
+   
+		<!-- 站长说 -->
+   
+		<div class="card card-site-info ">
+		<div class="m-3">
+		   <div class="small line-height-2"><b>公告 ： <i class="fa fa-volume-down fa-2" aria-hidden="true"></i></b></li><?php /*echo $conf['announcement'];*/?>  你可以点击上方rss feed for you来订阅页面，如需添加其它feed请点击页面最下方。</div>
+		</div>
+		 </div>
+   
+   
+		<!-- 广告招租-->
+		<div class="card card-site-info ">
+		<div class="m-3">
+		   <div class="small line-height-2"><b>广告位 <i class="fa fa-volume-down fa-2" aria-hidden="true"></i></b></li>：<?php /*echo $conf['announcement'];*/?>
+		<a href="https://efficiencyfollow.notion.site" target="_blank" rel="nofollow noopener">
+		<span>Efficiency主页</span></a>&nbsp;&nbsp;&nbsp; 
+		<a href="https://noisedh.cn" target="_blank" rel="nofollow noopener">
+		<span>Noise导航站</span></a>&nbsp;&nbsp;&nbsp;
+		<a href="https://t.me/quanshoulu" target="_blank" rel="nofollow noopener">
+		<span>TG发布频道</span></a>&nbsp;&nbsp;&nbsp;
+		<a href="https://noisework.cn" target="_blank" rel="nofollow noopener">
+		<span>引导主页</span></a>&nbsp;&nbsp;&nbsp;
+		<a href="https://www.noisesite.cn" target="_blank" rel="nofollow noopener">
+		<span>知识效率集</span></a>&nbsp;&nbsp;&nbsp;
+		<a href="https://rcy1314.github.io/some-stars" target="_blank" rel="nofollow noopener">
+		<span>我的star列表</span></a>&nbsp;&nbsp;&nbsp;
+		<a href="https://noiseyp.top" target="_blank" rel="nofollow noopener">
+		<span>Noise资源库</span></a></div>
+		</div>
+			<br>
+	   
+
+		<ol>
+			<li><a href="https://www.v2ex.com/t/985136#reply1" target="_blank" rel="noopener">折腾了一个可以自定义的导航网址，大家来看看哈</a> (www.v2ex.com)</li>
+			<li><a href="https://t.bilibili.com/856231438753726482" target="_blank" rel="noopener">AE/pr插件-快速遮罩蒙版抠像色彩校正插件AEscripts QuickMatte</a> (t.bilibili.com)</li>
+			<li><a href="https://t.bilibili.com/856230962010259463" target="_blank" rel="noopener">AE/PR插件-创意毛玻璃霜冻扭曲特效插件AEscripts Glasswork</a> (t.bilibili.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fsift/looking_for_a_video_player_that_works_using/" target="_blank" rel="noopener">正在寻找一种使用没有结束时间代码的字幕的视频播放器，或者一种修复字幕文本文件而没有结束时间代码的方法</a> (www.reddit.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fq4ar/is_there_a_software_for_windows_that_is_literally/" target="_blank" rel="noopener">有没有一种适用于 Windows 的软件，字面意思是记事本，但可以在断电时自动保存数据？类似于Notepad++，但极其简化，基本上看起来像Notepad</a> (www.reddit.com)</li>
+			<li><a href="https://t.bilibili.com/856200652437585923" target="_blank" rel="noopener">AE/PR插件-自动生成深度图景深3D相机动画插件AEscripts Quick Depth</a> (t.bilibili.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fny0o/searching_for_a_free_site_or_software_that/" target="_blank" rel="noopener">搜索自动字幕和翻译视频/音频的免费网站或软件</a> (www.reddit.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fl6qo/adobe_acrobat_replacement/" target="_blank" rel="noopener">Adobe Acrobat 替代品？</a> (www.reddit.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fib7l/need_audio_content_sorting_software/" target="_blank" rel="noopener">需要音频内容整理软件</a> (www.reddit.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1848326-1-1.html" target="_blank" rel="noopener">哔哩哔哩第三方TV+Pad版 BBLL v1.4.7，支持8K、杜比视界以及弹幕播放，改进搜索问题</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.v2ex.com/t/985103#reply1" target="_blank" rel="noopener">自媒体内容创作流程优化： GPT AI Flow 让创作事半功倍 🚀</a> (www.v2ex.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fhgf3/requesting_reference_for_software_for_hindu/" target="_blank" rel="noopener">请求印度教寺庙日常运营软件参考</a> (www.reddit.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1848323-1-1.html" target="_blank" rel="noopener">每日cctv文字版，自己写的</a> (www.52pojie.cn)</li>
+			<li><a href="https://m.okjike.com/originalPosts/6537f11cd5f9a5727ffdb4a3" target="_blank" rel="noopener">Vispunk Video - 免费的 AI 视频制作工具 地址：https://vispunk.com/video Vispunk Video 是一款极简、强大的免费 AI 视频制作工具。 你只需输入视频的相关 Pro...</a> (m.okjike.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fgu8a/a_software_that_can_detect_and_list_duplicate/" target="_blank" rel="noopener">可以检测并列出硬盘上重复文件的软件吗？</a> (www.reddit.com)</li>
+			<li><a href="https://m.okjike.com/originalPosts/6537ed6a5110e25455ef50a5" target="_blank" rel="noopener">钉钉企典 - 免费的企业信息查询 地址：https://dingtalk.com/qidian/ 钉钉企典，一款方便快捷的企业信息查询工具。 它可以帮助您轻松查找公司信息、企业风险等相...</a> (m.okjike.com)</li>
+			<li><a href="https://www.producthunt.com/posts/spelliy" target="_blank" rel="noopener">斯佩利</a> (www.producthunt.com)</li>
+			<li><a href="https://www.v2ex.com/t/985075#reply27" target="_blank" rel="noopener">IP 信息查询的新选择 IP.IM</a> (www.v2ex.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1848287-1-1.html" target="_blank" rel="noopener">淘宝主图改长图小工具1.0</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fe03y/free_windows_software_to_edit_large_xmlfiles/" target="_blank" rel="noopener">用于编辑大型 XML 文件的免费 Windows 软件？</a> (www.reddit.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fdvjc/need_an_tool_for_download_files_from_an_parent/" target="_blank" rel="noopener">需要一个从父目录下载文件的工具</a> (www.reddit.com)</li>
+			<li><a href="https://www.producthunt.com/posts/livelypencil" target="_blank" rel="noopener">活泼铅笔</a> (www.producthunt.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fdcfv/i_have_over_19000_images_on_my_drivei_need_to/" target="_blank" rel="noopener">我的驱动器上有超过 19000 张图像...我需要从中删除我前任的所有照片。</a> (www.reddit.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fdb7w/shot_in_the_dark_video_player_that_can_crossfade/" target="_blank" rel="noopener">在黑暗中拍摄 - 视频播放器可以在播放列表中的视频中交叉淡入淡出或淡入/淡出，同时随机播放它们。</a> (www.reddit.com)</li>
+			<li><a href="https://t.bilibili.com/856057050220724229" target="_blank" rel="noopener">FCPX中文版插件-105个镜头光晕耀斑光效动画Lens Flare for Final Cut Pro</a> (t.bilibili.com)</li>
+			<li><a href="https://www.producthunt.com/posts/mini-e-bike-1" target="_blank" rel="noopener">迷你电动自行车1</a> (www.producthunt.com)</li>
+			<li><a href="https://www.ypojie.com/7590.html" target="_blank" rel="noopener">AdGuard v4.2.118 安卓广告拦截软件Nightly中文特别版</a> (www.ypojie.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17fbmyd/need_a_video_playing_software_with_specific/" target="_blank" rel="noopener">需要一款具有特定功能的视频播放软件</a> (www.reddit.com)</li>
+			<li><a href="https://t.bilibili.com/856037929016885286" target="_blank" rel="noopener">[星星眼]秘籍在此</a> (t.bilibili.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1848223-1-1.html" target="_blank" rel="noopener">ArityCalc v1.50 计算器 2d3d图形展示结果(2.3mb)</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.52pojie.cn/thread-1848214-1-1.html" target="_blank" rel="noopener">Bubble v2.6水平仪(1.4mb)</a> (www.52pojie.cn)</li>
+			<li><a href="https://t.bilibili.com/856021676844908583" target="_blank" rel="noopener">【功率王X100黄金版获取秘籍】</a> (t.bilibili.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17f9i1i/looking_for_auto_keyboard_by_murgee_alterantive/" target="_blank" rel="noopener">正在寻找 muurgee 替代品的自动键盘！</a> (www.reddit.com)</li>
+			<li><a href="https://www.appinn.com/azgaars-fantasy-map-generator-cn/" target="_blank" rel="noopener">幻想地图生成器 – 帮助奇幻、幻想作家、游戏玩家和制图者创建和编辑奇幻地图[免费汉化版]</a> (www.appinn.com)</li>
+			<li><a href="https://www.v2ex.com/t/984973#reply0" target="_blank" rel="noopener">思阅 SRead 新功能 Chrome 扩展发布啦！</a> (www.v2ex.com)</li>
+			<li><a href="https://www.appinn.com/autobangumi/" target="_blank" rel="noopener">AutoBangumi – 全自动、一条龙追番工具：订阅、下载、整理、播放</a> (www.appinn.com)</li>
+			<li><a href="https://www.v2ex.com/t/984922#reply0" target="_blank" rel="noopener">1024 程序员节快乐，现在可以给 GitHub 项目 repo 添加标签备注了，使 Star 列表里的项目信息更加清晰</a> (www.v2ex.com)</li>
+			<li><a href="https://t.bilibili.com/855959236627136550" target="_blank" rel="noopener">📣 喜闻乐见的以旧换新活动ta来了[脱单doge] 👉 智云五倍F100棒灯可以旧换新啦 [打call]即日起-11.11日限定开放 [打call]旧灯具不限机型不限品牌，最高可抵3...</a> (t.bilibili.com)</li>
+			<li><a href="https://www.v2ex.com/t/984912#reply4" target="_blank" rel="noopener">便签 Pro - MacOS 原生便签终极替代品</a> (www.v2ex.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1848097-1-1.html" target="_blank" rel="noopener">1Tap Cleaner Pro v4.44-清理垃圾</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.v2ex.com/t/984902#reply0" target="_blank" rel="noopener">1024, bug free code complete.</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984867#reply5" target="_blank" rel="noopener">[1024 总得做点好玩的] 现已支持解析 QQ 音乐分享链接！</a> (www.v2ex.com)</li>
+			<li><a href="https://www.producthunt.com/posts/dialoggpt" target="_blank" rel="noopener">对话GPT</a> (www.producthunt.com)</li>
+			<li><a href="https://www.appinn.com/dynamic-theme/" target="_blank" rel="noopener">动态主题 – Windows 10/11 高级壁纸、锁屏界面工具，可自动下载 Bing、Windows 聚焦壁纸</a> (www.appinn.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1848020-1-1.html" target="_blank" rel="noopener">索尼官方版 Music Center for PC（2.6.0）本地音乐播放器</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17f3pha/free_appsweb_that_could_help_me_create_optimized/" target="_blank" rel="noopener">免费的应用程序/网络可以帮助我根据我保存的 Google 地图目的地/文件夹创建优化的导游？</a> (www.reddit.com)</li>
+			<li><a href="https://www.reddit.com/r/software/comments/17f3p6h/brand_new_lenovo_laptop_windows_11_what_anti/" target="_blank" rel="noopener">全新联想笔记本电脑，Windows 11，需要什么防病毒软件？</a> (www.reddit.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1848006-1-1.html" target="_blank" rel="noopener">RevokeMsgPatcher.v1.7（搬运分享）-微信QQ防撤回软件</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.v2ex.com/t/984842#reply48" target="_blank" rel="noopener">🎉🎉🎉Xterminal 推出笔记功能啦🎉🎉🎉（顺便送激活码）</a> (www.v2ex.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847959-1-1.html" target="_blank" rel="noopener">360极速浏览器X 版本号22.0.1011.64</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847953-1-1.html" target="_blank" rel="noopener">Reader透明阅读器，上班摸鱼神器</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.v2ex.com/t/984779#reply35" target="_blank" rel="noopener">做了一个自然语音生成的 AI 模型，大家提点意见</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984759#reply50" target="_blank" rel="noopener">1024-JetBrains 插件 Toolset 分享&福利</a> (www.v2ex.com)</li>
+			<li><a href="https://t.bilibili.com/855868818957795344" target="_blank" rel="noopener">Blender中文版插件-火焰燃烧爆炸碎片特效插件VDBLab Addon 1.0 For Blender</a> (t.bilibili.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847886-1-1.html" target="_blank" rel="noopener">小米澎湃OS76个系统APP提取包（含壁纸文件夹）</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847858-1-1.html" target="_blank" rel="noopener">国学乐园TV（TV端）孩子在家就能看国学经典、早教认知等</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.v2ex.com/t/984717#reply1" target="_blank" rel="noopener">全新的 Demo, 详细介绍 NeuralRad 平台采用 Rust 和 WebAssembly 实现的功能</a> (www.v2ex.com)</li>
+			<li><a href="https://www.producthunt.com/posts/hive99-beta" target="_blank" rel="noopener">Hive99 测试版</a> (www.producthunt.com)</li>
+			<li><a href="https://www.producthunt.com/posts/heyweb" target="_blank" rel="noopener">嘿网</a> (www.producthunt.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847826-1-1.html" target="_blank" rel="noopener">调音器v6.4.0(4.8mb)</a> (www.52pojie.cn)</li>
+			<li><a href="https://jpsmile.com/idm-6/" target="_blank" rel="noopener">Win软件：Internet Download Manager 6.41 Build 22 多语言/ 零售版 - 网络资源下载神器_支持下载各类网站视音频</a> (jpsmile.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847821-1-1.html" target="_blank" rel="noopener">节拍器v4.11.0(5.7mb)</a> (www.52pojie.cn)</li>
+			<li><a href="https://t.bilibili.com/855711966776262659" target="_blank" rel="noopener">Blender中文版插件-曲线绘制非破坏性修剪贴花插件Trimflow</a> (t.bilibili.com)</li>
+			<li><a href="https://www.v2ex.com/t/984686#reply0" target="_blank" rel="noopener">JCJC-基于剪贴板的碎片信息收集工具（Windows）</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984680#reply9" target="_blank" rel="noopener">分享一款最近做的网页游戏， Is That AI</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984675#reply4" target="_blank" rel="noopener">一个稍稍不同的 ChatGPT 套壳 App - WizBoard</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984605#reply20" target="_blank" rel="noopener">光速从 0 开始开源一个 vue3 后台管理的架子，好用哟。。</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984603#reply2" target="_blank" rel="noopener">Gmemp 简约时尚的个人在线音乐播放器 开源</a> (www.v2ex.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847706-1-1.html" target="_blank" rel="noopener">3C一体化工具v2.8.2</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.appinn.com/micro-scale/" target="_blank" rel="noopener">μScale – 利用 AI 算法，将图像放大 4 倍，免费、在线</a> (www.appinn.com)</li>
+			<li><a href="https://www.v2ex.com/t/984570#reply0" target="_blank" rel="noopener">浏览器中运行完整 Java ,，运行 j2me 游戏</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984548#reply0" target="_blank" rel="noopener">宣传一下 RIFE 视频插帧 / 补帧方案</a> (www.v2ex.com)</li>
+			<li><a href="https://www.appinn.com/background-music-for-macos-2/" target="_blank" rel="noopener">Background Music – 有其它声音时，自动暂停音乐[macOS]</a> (www.appinn.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847614-1-1.html" target="_blank" rel="noopener">VeraCrypt  v1.26.7   磁盘加密工具</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847606-1-1.html" target="_blank" rel="noopener">Dbeaver community(数据库管理软件)  V23.2.3</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.appinn.com/geiwoqiaomimi/" target="_blank" rel="noopener">给我悄咪咪 – 其他应用发出声音时，自动把音乐软件的音量静音[windows]</a> (www.appinn.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847484-1-1.html" target="_blank" rel="noopener">Optimizer(系统优化工具) v16.1 单文件版</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.v2ex.com/t/984361#reply40" target="_blank" rel="noopener">水獭输入工具 app store 上架啦，可以自定义 javascript 脚本的 iOS 输入法工具</a> (www.v2ex.com)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847446-1-1.html" target="_blank" rel="noopener">比特彗星 BitComet 2.05 Beta1 [202301020]</a> (www.52pojie.cn)</li>
+			<li><a href="https://www.52pojie.cn/thread-1847445-1-1.html" target="_blank" rel="noopener">Universal TV Remote Control v2.1.6通用遥控器(8.7mb)</a> (www.52pojie.cn)</li>
+			<li><a href="https://t.bilibili.com/855337243753054242" target="_blank" rel="noopener">AE模板-简单线条生长路径箭头动画生成器模板Easy Arrow Maker</a> (t.bilibili.com)</li>
+			<li><a href="https://www.v2ex.com/t/984318#reply23" target="_blank" rel="noopener">自学虚幻引擎 3 个月, 做了个视频</a> (www.v2ex.com)</li>
+			<li><a href="https://t.me/dedao2019/2248" target="_blank" rel="noopener">得到10.16-22 链接:https://pan.baidu.com/s/15TvswWGZirshR_vnRLf_nQ?pwd=875v 提取码:875v 营业执照注册教程 https://www.aliyundrive.com/s/1SmRove4jXQ 珍大...</a> (t.me)</li>
+			<li><a href="https://www.v2ex.com/t/984253#reply11" target="_blank" rel="noopener">做了一个让 GPT 自问自答和多角色扮演进行对话的小项目</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984251#reply20" target="_blank" rel="noopener">看到有人搓论坛，我也来分享下我的小论坛</a> (www.v2ex.com)</li>
+			<li><a href="https://www.appinn.com/send-to-kindle/" target="_blank" rel="noopener">发送至 Kindle 文档的新功能：PDF 注释、高亮，电子书 Page Flip 功能</a> (www.appinn.com)</li>
+			<li><a href="https://www.appinn.com/veracrypt-1-26-7/" target="_blank" rel="noopener">跨平台、开源磁盘加密工具 VeraCrypt 时隔20个月更新，修复与新系统的兼容性</a> (www.appinn.com)</li>
+			<li><a href="https://www.v2ex.com/t/984196#reply9" target="_blank" rel="noopener">基于 Tauri 开发的壁纸软件 [跨平台、AI、Web3 畅想]</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984172#reply0" target="_blank" rel="noopener">分享一个飞书的订阅服务管理模板</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984165#reply4" target="_blank" rel="noopener">开源 Flutter 数独应用，支持打包 IOS/Android 应用</a> (www.v2ex.com)</li>
+			<li><a href="https://www.producthunt.com/posts/signalzen-4" target="_blank" rel="noopener">信号禅</a> (www.producthunt.com)</li>
+			<li><a href="https://www.v2ex.com/t/984158#reply2" target="_blank" rel="noopener">GameMakerKit 加速独立游戏产品上线效率</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984142#reply1" target="_blank" rel="noopener">基于 Tauri 开发的壁纸小软件</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984105#reply223" target="_blank" rel="noopener">刚手搓的论坛，欢迎大家来玩~</a> (www.v2ex.com)</li>
+			<li><a href="https://www.producthunt.com/posts/chatdox-ai-2-0" target="_blank" rel="noopener">查多克斯人工智能2.0</a> (www.producthunt.com)</li>
+			<li><a href="https://www.appinn.com/nvidia-free-stable-diffusion-xl/" target="_blank" rel="noopener">NVIDIA 提供了一个免费测试 Stable Diffusion XL 服务，让 AI 帮你绘画</a> (www.appinn.com)</li>
+			<li><a href="https://www.appinn.com/snipaste-pro/" target="_blank" rel="noopener">十月特惠！超强截图贴图工具 Snipaste 限时 9 折，仅需 89.1 元</a> (www.appinn.com)</li>
+			<li><a href="https://www.v2ex.com/t/984063#reply0" target="_blank" rel="noopener">听说可以用 GPT 阅读文章？注册即送 7 天会员</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/984006#reply55" target="_blank" rel="noopener">新写的一个方便大家发邀请码的网站 https://invitecode.cc/</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983979#reply20" target="_blank" rel="noopener">来了，新版 Escrcpy@v1.8.11 发布，全平台支持与高级定制功能，不一样的体验；使用图形化的 Scrcpy 显示和控制您的 Android 设备，由 Electron 驱动。</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983972#reply55" target="_blank" rel="noopener">[安卓] 装了太多应用找不到？让我帮你一秒开启应用</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983969#reply4" target="_blank" rel="noopener">有对密室逃脱游戏感兴趣的吗，我做了一个开源模板</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983938#reply1" target="_blank" rel="noopener">40 岁, 从月薪 5 万到现在月入 1 万, 每份工作收入列表, 阿里不是我的巅峰 (我的人生简历)</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983904#reply5" target="_blank" rel="noopener">又看到 Casdoor 的置顶，无奈之下写了个油猴脚本，分享给大家</a> (www.v2ex.com)</li>
+			<li><a href="https://www.producthunt.com/posts/irys" target="_blank" rel="noopener">艾里斯</a> (www.producthunt.com)</li>
+			<li><a href="https://www.v2ex.com/t/983895#reply11" target="_blank" rel="noopener">开源-基于 tun 和 clash 的桌面代理客户端</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983858#reply3" target="_blank" rel="noopener">搞了个 AI 语音识别记账小程序</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983823#reply0" target="_blank" rel="noopener">本人基于开源项目建立的 ai 绘画网站，欢迎各位围观</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983793#reply3" target="_blank" rel="noopener">ChatHub 一个各种 AI 的 chrome 聚合插件</a> (www.v2ex.com)</li>
+			<li><a href="https://m.okjike.com/originalPosts/653215a397aae411ebbec4da" target="_blank" rel="noopener">随便扫 - 一个智能二维码扫描跳转工具，根据扫描的二维码结果，跳转打开匹配的应用。</a> (m.okjike.com)</li>
+			<li><a href="https://www.v2ex.com/t/983764#reply2" target="_blank" rel="noopener">开源一个自己 Python 写的 ChatGPT Telegram Bot</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983754#reply1" target="_blank" rel="noopener">让你的图片讲故事</a> (www.v2ex.com)</li>
+			<li><a href="https://t.bilibili.com/854417558112043015" target="_blank" rel="noopener">中文版FCPX插件-95组Apple演示幻灯片信息数据图片展示文字标题排版动画预设 mKeynote</a> (t.bilibili.com)</li>
+			<li><a href="https://www.v2ex.com/t/983704#reply19" target="_blank" rel="noopener">MBTI 人生难题 解决器！ （GPT + 开源 + 免费）</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983657#reply1" target="_blank" rel="noopener">AI bookmarklet 刚写了一个 关于 bookmarklet 的网站 这不体验一波？</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983654#reply11" target="_blank" rel="noopener">添加标签的油猴脚本大更新，添加标签更加方便了</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983646#reply103" target="_blank" rel="noopener">我的新版个人网站上线啦！</a> (www.v2ex.com)</li>
+			<li><a href="https://t.bilibili.com/854351166494998529" target="_blank" rel="noopener">#C4DQuickTip 108：Cinema 4D 2024.1使用线性关节绑定的活塞运动</a> (t.bilibili.com)</li>
+			<li><a href="https://www.v2ex.com/t/983622#reply0" target="_blank" rel="noopener">分析 vue 代码并提供优化建议的工具更新啦！</a> (www.v2ex.com)</li>
+			<li><a href="https://m.okjike.com/originalPosts/65311a8dea72dfbaff37ed1c" target="_blank" rel="noopener">一个CPU和GPU显卡的规格对比与性能评级，CPU和显卡之间的对比，基准测试，跑分数据，评级，CPU跑分，以及天梯图。http://topcpu.net/</a> (m.okjike.com)</li>
+			<li><a href="https://m.okjike.com/originalPosts/65311a01ea72dfbaff37df35" target="_blank" rel="noopener">花语云导航 - 收录精选优质站点网址！</a> (m.okjike.com)</li>
+			<li><a href="https://www.v2ex.com/t/983567#reply5" target="_blank" rel="noopener">造了一个玩具，通过插件远程控制你的浏览器</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983542#reply17" target="_blank" rel="noopener">做了一个录屏工具，通过鼠标跟随，点击自动放大缩小画面，快速产出好看的产品演示视频</a> (www.v2ex.com)</li>
+			<li><a href="https://www.v2ex.com/t/983531#reply58" target="_blank" rel="noopener">一款 支持 macos iPad ios 的 Twitter 客户端</a> (www.v2ex.com)</li>
+			<li><a href="https://t.bilibili.com/854092935899119657" target="_blank" rel="noopener">Blender逼真真实漂浮灰尘粒子生成器预设Dustify(Procedural Generator)</a> (t.bilibili.com)</li>
+			<li><a href="https://t.bilibili.com/854071564121931782" target="_blank" rel="noopener">中文版Blender插件-AE三维摄像机跟踪数据导出到Blender软件插件TrackerJack</a> (t.bilibili.com)</li>
+			<li><a href="https://t.bilibili.com/854008260862148629" target="_blank" rel="noopener">中文版FCPX插件-50种炫酷电影胶片粒子散景光斑动画图形风格光影叠加效果插件</a> (t.bilibili.com)</li>
+			<li><a href="https://t.bilibili.com/853823791766175750" target="_blank" rel="noopener">📣 大家问了很久的#智云功率王X100#优惠活动终于来啦！ 👉 即日起至10月24日活动期间下单购买功率王X100，就有机会获得限定钛金版灯光保护盖！ 💥 邀好友...</a> (t.bilibili.com)</li>
+			<li><a href="https://t.bilibili.com/853776804841783384" target="_blank" rel="noopener">📢 @智云官方 全网PICK超级追梦人！ 🌟是金子，总会发光；是追梦人，终将会实现梦想！ 👇 戳海报带话题#功率王X100黄金版#投稿分享你的摄影追梦瞬间，这次...</a> (t.bilibili.com)</li>
+			<li><a href="https://m.okjike.com/originalPosts/652f9bee5110e254553c581b" target="_blank" rel="noopener">竟然被这样分享了😓</a> (m.okjike.com)</li>
+			<li><a href="https://jpsmile.com/mediahuman-youtube-downloader/" target="_blank" rel="noopener">Win软件：MediaHuman YouTube Downloader 3.9.9.86 - YouTube视频下载工具</a> (jpsmile.com)</li>
+			<li><a href="https://m.okjike.com/originalPosts/652f766f5110e25455388611" target="_blank" rel="noopener">好戏蓝光影院 https://haoxi.vip/</a> (m.okjike.com)</li>
+			<li><a href="https://t.bilibili.com/853676173752795153" target="_blank" rel="noopener">📣智云#功率王X100黄金版# 璀璨来袭，满满含金量✨ 🌟智云持续突破便携布光产品潜能，匠心打造，黄金加持，带来全新的至臻光效体验！全球限量发行10台。 �...</a> (t.bilibili.com)</li>
+			<li><a href="https://t.bilibili.com/853667858686672900" target="_blank" rel="noopener">璀璨来袭！智云发布功率王X100黄金版！</a> (t.bilibili.com)</li>
+			<li><a href="https://www.producthunt.com/posts/korl-2" target="_blank" rel="noopener">科尔</a> (www.producthunt.com)</li>
+			<li><a href="https://t.bilibili.com/853297757045129233" target="_blank" rel="noopener">😲 云妹听闻我司灯光组最受欢迎的一位小伙伴外出镀金了？！ 🤩 即将带来「金」喜奉送，真「金」实意不搞虚的💯！ 📝 大家希望看到什么「金」喜 好礼？来...</a> (t.bilibili.com)</li>
+			<li><a href="https://jpsmile.com/permute-3/" target="_blank" rel="noopener">Mac软件：Permute 3 v3.11.0 最纯粹简洁的多媒体转码软件</a> (jpsmile.com)</li>
+			<li><a href="https://jpsmile.com/downie-4/" target="_blank" rel="noopener">MAC软件：Downie 4 v4.6.31_极致好用的视频下载利器</a> (jpsmile.com)</li>
+			<li><a href="https://www.producthunt.com/posts/creatual" target="_blank" rel="noopener">创意</a> (www.producthunt.com)</li>
+			<li><a href="https://www.producthunt.com/posts/emma-up-sleep" target="_blank" rel="noopener">艾玛起来睡觉</a> (www.producthunt.com)</li>
+			<li><a href="https://t.bilibili.com/853036936828289061" target="_blank" rel="noopener">此刻，一位摄影师掏出TA的“雷神之锤”[doge] #智云功率王X100#百瓦亮度，一手掌控👌 PS：听说有特别版X100即将面世，看到的小伙伴都被闪到了[星星眼]</a> (t.bilibili.com)</li>
+			<li><a href="https://jpsmile.com/influx/" target="_blank" rel="noopener">Influx v1.4.0 特殊音视频格式（MKV、WebM等）直接导入支持Adobe PR/AE/AME/AU -（Win&Mac）</a> (jpsmile.com)</li>
+			<li><a href="https://t.bilibili.com/853021856950648841" target="_blank" rel="noopener">1分钟搞懂iPhone摄影，博主们原来是这么拍的！</a> (t.bilibili.com)</li>
+			<li><a href="https://m.okjike.com/originalPosts/652cf34dbb3e3660e8c816e6" target="_blank" rel="noopener">💡挑战推荐100个好用网站 网站名称四：多种草@多种草（似乎没入驻🤣） 网站简介：为新媒体博主、运营等设计的AI智能创作平台 推荐理由： 从网站名称就能推断...</a> (m.okjike.com)</li>
+			<li><a href="https://jpsmile.com/the-foundry-nuke-studio-15/" target="_blank" rel="noopener">The Foundry Nuke 15.0v1_影视后期特效合成软件（Win&Mac&Linux）</a> (jpsmile.com)</li>
+			<li><a href="https://t.me/dedao2019/2247" target="_blank" rel="noopener">得到10.09-15 链接:https://pan.baidu.com/s/1CswNtQpyQj-OVAufJZ0wRQ?pwd=1cjr 提取码:1cjr 得到商学相关问题问答合集 https://www.aliyundrive.com/s/WWkLR9BX...</a> (t.me)</li>
+			<li><a href="https://m.okjike.com/originalPosts/652abf9399f2123c74d8c1bb" target="_blank" rel="noopener">发现一个网站：框框大学 这是一个分享各个专业学习建议的平台，大家可以去看看，也可以分享自己的专业经历和感想，还蛮不错的哦，链接放下面： https://www.kkda...</a> (m.okjike.com)</li>
+			<li><a href="https://m.okjike.com/originalPosts/652a6c055110e25455cd5aa3" target="_blank" rel="noopener">Toolify 发现最佳人工智能的网站；收录 6207+ 个最佳人工智能公司和工具，以及 40 多个类别的最好的人工智能公司，如人工智能文案写作、人工智能图像生成和人工...</a> (m.okjike.com)</li>
+			<li><a href="https://jpsmile.com/mocha-pro-2023-avx/" target="_blank" rel="noopener">AVX插件：Boris FX Mocha Pro 2023 v10.0.4_平面跟踪摄像机反求插件_支持Avid Media Composer(Win&Mac)</a> (jpsmile.com)</li>
+			<li><a href="https://jpsmile.com/mocha-pro-2023-adobe/" target="_blank" rel="noopener">AE/PR插件：Boris FX Mocha Pro 2023 v10.0.4_平面跟踪摄像机反求插件(Win&Mac)</a> (jpsmile.com)</li>
+			<li><a href="https://jpsmile.com/mocha-pro-2023-ofx/" target="_blank" rel="noopener">OFX插件：Boris FX Mocha Pro 2023 v10.0.4_平面跟踪摄像机反求插件_支持达芬奇/Fusion/Flame/Nuke等(Win&Mac)</a> (jpsmile.com)</li>
+			<li><a href="https://jpsmile.com/mocha-pro-2023/" target="_blank" rel="noopener">Boris FX Mocha Pro 2023 v10.0.4_平面跟踪摄像机反求软件(Win&Mac)</a> (jpsmile.com)</li>
+			<li><a href="https://t.bilibili.com/851932915240534161" target="_blank" rel="noopener">如何用简单的灯光拍出商业片丨智云功率王G200</a> (t.bilibili.com)</li>
+			<li><a href="https://t.bilibili.com/851887160949735428" target="_blank" rel="noopener">富士instax家要出新品啦，大家是否和云妹一样很期待呢？一起来10月17日15点富士instax直播间见证新品哦~关注@智云官方 +@富士instax ，【转评赞】本动态，10月27...</a> (t.bilibili.com)</li>
+			<li><a href="https://www.bilibili.com/video/BV1Mj411x7dw" target="_blank" rel="noopener">AE脚本-批量更新升级AEP模板工程文件 AEP Version Updater</a> (www.bilibili.com)</li>
+			<li><a href="https://www.bilibili.com/video/BV1rH4y1o7y9" target="_blank" rel="noopener">AE脚本-一键快速生成摄像机空间视差MG场景动画 Parallaxer 2</a> (www.bilibili.com)</li>
+			<li><a href="https://noisevip.cn/17341.html" target="_blank" rel="noopener">VALL-E X-轻便快速且强大的AI声音克隆</a> (noisevip.cn)</li>
+			<li><a href="https://noisevip.cn/17340.html" target="_blank" rel="noopener">AI本地视频总结</a> (noisevip.cn)</li>
+			<li><a href="https://t.me/dedao2019/2246" target="_blank" rel="noopener">得到10.1-8 链接:https://pan.baidu.com/s/19DyZkrpr85vjqjYOp6F8nw?pwd=1573 提取码:1573 sd工作流插件和社区 🔗：lightflow.ai 全球最聪明的ai绘画提示词工...</a> (t.me)</li>
+			<li><a href="https://noisevip.cn/17225.html" target="_blank" rel="noopener">mindsdb-将数据库与AI框架连接起来,快速构建 AI 应用程序</a> (noisevip.cn)</li>
+			<li><a href="https://noisevip.cn/17226.html" target="_blank" rel="noopener">一个低代码、无代码AI工作流工具</a> (noisevip.cn)</li>
+			<li><a href="https://noisevip.cn/17223.html" target="_blank" rel="noopener">Podwise-超强播客AI工具</a> (noisevip.cn)</li>
+			<li><a href="https://weibo.com/5811552055/NmVXHexVW" target="_blank" rel="noopener">LOGO 设计没灵感？试试这 9 个方法简单实用 [抱一抱] [图片][图片][图片][图片][图片][图片][图片][图片][图片]</a> (weibo.com)</li>
+			<li><a href="https://weibo.com/5811552055/NmRDow1xp" target="_blank" rel="noopener">设计师自媒体搞钱攻略！在 🍠 这 12 个方法一定要知道 [全力以赴] [图片][图片][图片][图片][图片][图片][图片][图片][图片][图片][图片][图片]</a> (weibo.com)</li>
+			<li><a href="https://weibo.com/5811552055/NmMwNelu6" target="_blank" rel="noopener">随着 AI 技术的发展，很多的图像处理任务都可以交给 AI 自动处理了，上次介绍完 8 个 LOGO 自动生成工具，看到有小伙伴问有没有便捷、高效的抠图工具，今天就整...</a> (weibo.com)</li>
+			<li><a href="https://weibo.com/5811552055/NmIcTBGbM" target="_blank" rel="noopener">今天再来根据用途分享给大家 10 最新的且免费好用的设计工具网站 [爱你]① 配色工具coolors.co② Iconslineicons.com③ UI 设计灵感uigarage.net④ 动态灵感anim...</a> (weibo.com)</li>
+			<li><a href="https://noisevip.cn/17209.html" target="_blank" rel="noopener">VCard-让数币消费更简单，快速从usdt到虚拟卡到支付宝到人民币消费或者出金</a> (noisevip.cn)</li>
+			<li><a href="https://noisevip.cn/17208.html" target="_blank" rel="noopener">自助建站系统,一建建站系统api版</a> (noisevip.cn)</li>
+			<li><a href="https://weibo.com/5811552055/NmyMp5MfV" target="_blank" rel="noopener">最近使用比较多的几个超好用的 AI 工具AI 文字转视频 👉🏻 runwayml.com/AI 全能型图片处理工具 👉🏻 clipdrop.co/AI 二 维码生成 👉🏻 qrcraft.xyz...</a> (weibo.com)</li>
+			<li><a href="https://weibo.com/5811552055/NmtFNu3A4" target="_blank" rel="noopener">设计灵感！9组插画书籍封面设计赏析～ [图片][图片][图片][图片][图片][图片][图片][图片][图片]</a> (weibo.com)</li>
+			<li><a href="https://noisevip.cn/17181.html" target="_blank" rel="noopener">自然机器人-AutoPaaS 新一代自动化集成平台</a> (noisevip.cn)</li>
+			<li><a href="https://noisevip.cn/17182.html" target="_blank" rel="noopener">Hamibot-适用于安卓系统的自动化工具</a> (noisevip.cn)</li>
+			<li><a href="https://noisevip.cn/17183.html" target="_blank" rel="noopener">一个国内可直连的直播源分享项目</a> (noisevip.cn)</li>
+			<li><a href="https://weibo.com/5811552055/NmplUcx5N" target="_blank" rel="noopener">设计时没灵感？9 个小技巧，让你在创作时能够迅速地抓住灵感 [图片][图片][图片][图片][图片][图片][图片][图片][图片]</a> (weibo.com)</li>
+			<li><a href="https://www.producthunt.com/posts/askflow-ai" target="_blank" rel="noopener">Askflow人工智能</a> (www.producthunt.com)</li>
+			<li><a href="https://weibo.com/5811552055/NmkfiE7bp" target="_blank" rel="noopener">#资源君# 实测真的好用！ 分享 8 款设计师必备 AI 工具：AI 智能抠图、字 由 4.0-Al 字体工具、AI 翻译工具、AI 配色、AI 写作工具、AI 无损放大、AI 智能打光、...</a> (weibo.com)</li>
+			<li><a href="https://weibo.com/5811552055/NmfVpnGUy" target="_blank" rel="noopener">表情包立体书，我都不敢想象这得多有意思 [憧憬]书籍设计｜@羊哈哈haha 优设AIGC的微博视频</a> (weibo.com)</li>
+			<li><a href="https://weibo.com/5811552055/NmaOOapnm" target="_blank" rel="noopener">#资源君# 广告大佬的灵感源泉！奥美52个创意工具总结，再也不用担心没创意啦～ [图片][图片][图片][图片][图片][图片][图片][图片][图片]</a> (weibo.com)</li>
+			<li><a href="https://t.me/dedao2019/2245" target="_blank" rel="noopener">得到9.26-30 链接:https://pan.baidu.com/s/1uq-7vU6qSJgL16C82RFkuw?pwd=ty65 提取码:ty65 设计师基础班：从0进阶，设计师第1步【818.42MB】 https://www.aliyu...</a> (t.me)</li>
+			<li><a href="https://www.producthunt.com/posts/userpilot-product-analytics" target="_blank" rel="noopener">用户试点产品分析</a> (www.producthunt.com)</li>
+			<li><a href="https://t.bilibili.com/845285658774732944" target="_blank" rel="noopener">6招用XCD 28P拍出电影感Xpan照片｜#原来这么拍# 244集</a> (t.bilibili.com)</li>
+			<li><a href="https://t.me/dedao2019/2244" target="_blank" rel="noopener">得到9.18-24 链接:https://pan.baidu.com/s/1gtLS-HV9s9CrKYV5u2CC4Q?pwd=85h9 提取码:85h9 stable diffusion【最新网址】 ❶【LiblibAI网】：https://www.wjx.c...</a> (t.me)</li>
+			<li><a href="https://blog.daliansky.net/OCLP.html" target="_blank" rel="noopener">使用OpenCore Legacy Patcher工具在macOS Sonoma中重新打开不被支持的博通Wi-Fi无线网卡的正确插入姿势</a> (blog.daliansky.net)</li>
+			<li><a href="https://weibo.com/5732021189/NkqzFapgV" target="_blank" rel="noopener">转需。//@Illustrator资源库:转需。//@Sai资源库:转需。//@Adobe资源库:转需。 - 转发 @photoshop资源库:&ensp;软件插件全集及安装教程！1、全网最齐全的软件集...</a> (weibo.com)</li>
+			<li><a href="https://www.bilibili.com/video/BV1vk4y1F7By" target="_blank" rel="noopener">AE脚本-创建大量动态图形复杂场景MG动画工具</a> (www.bilibili.com)</li>
+			<li><a href="https://t.me/dedao2019/2243" target="_blank" rel="noopener">得到9.11-17 链接:https://pan.baidu.com/s/1wlPhj4axIjwxisLR9NapEQ?pwd=q8o2 提取码:q8o2 钉钉出品，一款免费查企业的网站，测试了下，效果还不错！ 网站介绍...</a> (t.me)</li>
+			<li><a href="https://www.producthunt.com/posts/tingl-anti-messenger" target="_blank" rel="noopener">Tingle 反信使</a> (www.producthunt.com)</li>
+			<li><a href="https://www.bilibili.com/video/BV1Pw411i7pr" target="_blank" rel="noopener">高级马赛克动态平铺视觉特效AE插件 MosaicArt 中文汉化版</a> (www.bilibili.com)</li>
+			<li><a href="https://www.bilibili.com/video/BV1fu4y1k7vk" target="_blank" rel="noopener">AE脚本-视觉特效预设 Effects Visualizer</a> (www.bilibili.com)</li>
+			<li><a href="https://t.me/dedao2019/2242" target="_blank" rel="noopener">得到9.04-10 链接:https://pan.baidu.com/s/1if3wstvjOF7g0qsCCPrEMA?pwd=u889 提取码:u889 XMind思维导图教程：从入门到进阶 https://www.aliyundrive.com/s/YA...</a> (t.me)</li>
+			<li><a href="https://www.bilibili.com/video/BV1G8411B7vW" target="_blank" rel="noopener">人工智能色彩匹配视频调色AE/PR插件 AI Color Match</a> (www.bilibili.com)</li>
+			<li><a href="https://www.bilibili.com/video/BV18j41117Vj" target="_blank" rel="noopener">中文汉化版-像素拉伸撕裂分离特效AE/PR插件 Pixel Sorter 3</a> (www.bilibili.com)</li>
+			<li><a href="https://www.bilibili.com/video/BV1VP411a7t6" target="_blank" rel="noopener">中文汉化AE脚本-文字标题滴血流血电影特效 Bleed!</a> (www.bilibili.com)</li>
+			<li><a href="https://t.me/dedao2019/2241" target="_blank" rel="noopener">name_cn(1).txt name_cn.txt NC_User.txt neclub_netgear_com_cn.txt newseasims.txt nextmedia香港壹传媒..txt nianjian.org国礼卡团购.txt nikefans.txt npc21...</a> (t.me)</li>
+			<li><a href="https://t.me/dedao2019/2240" target="_blank" rel="noopener">ispeak.cn.txt jgwy.txt jishigou.net.txt jluol吉林大学.txt jrez.net.txt jrez.net0.txt jsojc.txt kaixin.txt KF如家.txt kkplay.com_members.txt kome-optec...</a> (t.me)</li>
+			<li><a href="https://t.me/dedao2019/2239" target="_blank" rel="noopener">55.la.txt 5710049pppp571004[正确][将军].txt 5710049pppp571004[正确][密保].txt 571004将军[原始].txt 58登录成功号码.txt 5imx我爱模型网.txt 5nb.txt 5六位...</a> (t.me)</li>
+			<li><a href="https://t.me/dedao2019/2238" target="_blank" rel="noopener">得到8.28-9.03 链接:https://pan.baidu.com/s/14uJHEv_2v8FGG5mTOJnq9A?pwd=kd7y 提取码:kd7y 十年广交会名录【更新至2023】 https://www.aliyundrive.com/s/ERQ...</a> (t.me)</li>
+			<li><a href="https://www.bilibili.com/video/BV1Fu4y1y7Hm" target="_blank" rel="noopener">AE/AI/PS脚本-快速给图层重命名工具 Fast Renamer 1.5</a> (www.bilibili.com)</li>
+			<li><a href="https://t.bilibili.com/835289534726930546" target="_blank" rel="noopener">性能几乎拉满？索尼A7CR/A7CM2/FE 16-35mm F2.8 GM II旅行拍摄测试</a> (t.bilibili.com)</li>
+			<li><a href="https://www.bilibili.com/video/BV1Pp4y1N75A" target="_blank" rel="noopener">春天户外大自然虫鸣鸟叫森林溪流环境无损音效</a> (www.bilibili.com)</li>
+			<li><a href="https://t.me/dedao2019/2237" target="_blank" rel="noopener">得到8.21-27 链接:https://pan.baidu.com/s/1CsUw2E95mBuhj4v3uHPQQw?pwd=9z6n 提取码:9z6n 读懂的中国过去、现在与未来（套装17册）【电子书】 https://www.ali...</a> (t.me)</li>
+			
+		</ol>
+
+		<footer>
+		<div class="text-center py-1">   
+        <div>
+         <div class="text-center py-1">   
+         <div>
+		 <a href="https://ppnoise.notion.site/wiki-1ba2367142dc4b80b24873120a96efb5" target="_blank" rel="nofollow noopener">
+	     <span>feed添加</span></a>    <br>
+         </div>
+	     <a href="https://noisework.cn" target="_blank" rel="nofollow noopener">
+	     <span>主页</span></a>    <br>
+         </div>
+		 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		 <span id="busuanzi_container_site_pv" style='display:none'> 本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+		 </div>	
+		 <div style="margin-top: 10px;">
+		 &nbsp; 
+		<span id="momk"></span>
+		<span id="momk" style="color: #ff0000;"></span> 
+		<script type="text/javascript">
+   function NewDate(str) {
+   str = str.split('-');
+   var date = new Date();
+   date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+   date.setUTCHours(0, 0, 0, 0);
+   return date;
+   }
+   function momxc() {
+   var birthDay =NewDate("2021-09-23");
+   var today=new Date();
+   var timeold=today.getTime()-birthDay.getTime();
+   var sectimeold=timeold/1000
+   var secondsold=Math.floor(sectimeold);
+   var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
+   var daysold=Math.floor(e_daysold);
+   var e_hrsold=(daysold-e_daysold)*-24;
+   var hrsold=Math.floor(e_hrsold);
+   var e_minsold=(hrsold-e_hrsold)*-60;
+   var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
+   document.getElementById("momk").innerHTML = "本站已运行:"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+   setTimeout(momxc, 1000);
+   }momxc();
+	</footer>
+</body>
+</html>
