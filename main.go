@@ -554,7 +554,7 @@ func executeTemplate(writer io.Writer, templateData *TemplateData) error {
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>RSS | 聚合信息阅读</title>
+		<title>NOISE | 聚合信息阅读</title>
 		<style>
 		@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 
@@ -688,10 +688,20 @@ func executeTemplate(writer io.Writer, templateData *TemplateData) error {
 		</marquee>
 		</div>
 		</div>
+   
+   
 		<!-- 向右流动代码-->
+   
 		<marquee scrollamount="3" direction="right" behavior="alternate">
+   
 		<a>😄😃😀</a>
+   
 		</marquee>
+   
+   
+		
+   
+   
 		<div class="alert alert-danger alert-dismissable">
 		<button type="button" class="close" data-dismiss="alert"
 			   aria-hidden="true">
@@ -720,6 +730,30 @@ func executeTemplate(writer io.Writer, templateData *TemplateData) error {
 		   <div class="small line-height-2"><b>公告 ： <i class="fa fa-volume-down fa-2" aria-hidden="true"></i></b></li><?php /*echo $conf['announcement'];*/?>  你可以点击上方rss feed for you来订阅页面，如需添加其它feed请点击页面最下方。</div>
 		</div>
 		 </div>
+   
+   
+		<!-- 广告招租-->
+		<div class="card card-site-info ">
+		<div class="m-3">
+		   <div class="small line-height-2"><b>广告位 <i class="fa fa-volume-down fa-2" aria-hidden="true"></i></b></li>：<?php /*echo $conf['announcement'];*/?>
+		<a href="https://efficiencyfollow.notion.site" target="_blank" rel="nofollow noopener">
+		<span>Efficiency主页</span></a>&nbsp;&nbsp;&nbsp; 
+		<a href="https://noisedh.cn" target="_blank" rel="nofollow noopener">
+		<span>Noise导航站</span></a>&nbsp;&nbsp;&nbsp;
+		<a href="https://t.me/quanshoulu" target="_blank" rel="nofollow noopener">
+		<span>TG发布频道</span></a>&nbsp;&nbsp;&nbsp;
+		<a href="https://noisework.cn" target="_blank" rel="nofollow noopener">
+		<span>引导主页</span></a>&nbsp;&nbsp;&nbsp;
+		<a href="https://www.noisesite.cn" target="_blank" rel="nofollow noopener">
+		<span>知识效率集</span></a>&nbsp;&nbsp;&nbsp;
+		<a href="https://rcy1314.github.io/some-stars" target="_blank" rel="nofollow noopener">
+		<span>我的star列表</span></a>&nbsp;&nbsp;&nbsp;
+		<a href="https://noiseyp.top" target="_blank" rel="nofollow noopener">
+		<span>Noise资源库</span></a></div>
+		</div>
+			<br>
+	   
+
 		<ol>
 			{{ range .Posts }}<li><a href="{{ .Link }}" target="_blank" rel="noopener">{{ .Title }}</a> ({{ .Host }})</li>
 			{{ end }}
@@ -728,6 +762,14 @@ func executeTemplate(writer io.Writer, templateData *TemplateData) error {
 		<footer>
 		<div class="text-center py-1">   
         <div>
+         <div class="text-center py-1">   
+         <div>
+		 <a href="https://ppnoise.notion.site/wiki-1ba2367142dc4b80b24873120a96efb5" target="_blank" rel="nofollow noopener">
+	     <span>feed添加</span></a>    <br>
+         </div>
+	     <a href="https://noisework.cn" target="_blank" rel="nofollow noopener">
+	     <span>主页</span></a>    <br>
+         </div>
 		 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 		 <span id="busuanzi_container_site_pv" style='display:none'> 本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 		 </div>	
