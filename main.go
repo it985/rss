@@ -33,8 +33,7 @@ type Post struct {
 var (
 	feeds = []string{
 		"https://www.v2ex.com/feed/create.xml",
-		"https://www.52pojie.cn/forum.php?mod=rss&fid=16",
-		"https://www.ruanyifeng.com/blog/atom.xml"
+		"https://www.52pojie.cn/forum.php?mod=rss&fid=16"
 	}
 
 	// Show up to 60 days of posts
